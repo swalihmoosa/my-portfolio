@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+@import 'animate.css';
+/* @import '~loaders.css/src/animations/pacman.scss'; */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+	background: #022c43;
+    overflow: hidden;
+    display: block;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+	color: #000;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1280px;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @font-face {
+    font-family: 'La Belle Aurore';
+    src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2'),
+      url('./assets/fonts/LaBelleAurore.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
   }
-  to {
-    transform: rotate(360deg);
+  
+  @font-face {
+    font-family: 'Coolvetica';
+    src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2'),
+      url('./assets/fonts/CoolveticaRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
   }
-}
