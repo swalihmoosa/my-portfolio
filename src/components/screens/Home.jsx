@@ -10,7 +10,7 @@ export default function Home() {
     const [letterClass, setLetterClass] = useState('text-animate')
 
     const nameArray = ['w', 'a', 'l', 'i', 'h']
-    const jobArray = ['w','e','b',' ','d','e','v','e','l','o','p','e','r','.',]
+    const jobArray = ['S','o','f','t','w','a','r','e',' ','E','n','g','i','n','e','e','r']
 
     useEffect(() => {
         setTimeout(() => {
