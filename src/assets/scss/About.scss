@@ -28,7 +28,7 @@
                 p{
                     font-size: 13px;
                     color: #fff;
-                    font-family: "Open Sans", sans-serif;
+                    font-family: "Poppins";
                     font-weight: 300;
                     max-width: fit-content;
                     font-size: 14px !important;
@@ -46,16 +46,16 @@
                 .single-card{
                     width: 48%;
                     margin-bottom: 25px;
-                    padding: 3%;
+                    padding: 4% 3% 3% 3%;
                     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
                     position: relative;
                     background-color: #092c43;
-                    border: 2px solid transparent;
+                    border: 1px solid transparent;
                     transition: all .8s ease 0s;
                     border-radius: 10px;
                     &:hover{
                         transform: scale(1.1);
-                        border: 2px solid #ffd700;
+                        border: 1px solid #ffd700;
                     }
 
                     div.time{
@@ -68,7 +68,7 @@
                     h6{
                         color: #fff;
                         font-weight: 700;
-                        font-size: 16px;
+                        font-size: 15px;
                         font-family: "Poppins";
                         border-bottom: 1px solid #ffd700;
                         display: inline-block;
@@ -76,9 +76,8 @@
                         margin-bottom: 10px;
                     }
                     p{
-                        font-size: 13px;
                         color: #fff;
-                        font-family: "Open Sans", sans-serif;
+                        font-family: "Poppins";
                         font-weight: 300;
                         max-width: fit-content;
                         font-size: 14px !important;

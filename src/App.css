@@ -1,5 +1,7 @@
 @import 'animate.css';
 /* @import '~loaders.css/src/animations/pacman.scss'; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
 
 * {
 	margin: 0;
