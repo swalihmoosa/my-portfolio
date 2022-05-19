@@ -41,7 +41,7 @@ export default function Home() {
                     <AnimatedLetters
                         letterClass={letterClass}
                         strArray={jobArray}
-                        idx={22}
+                        idx={19}
                     />
                     </h1>
                     <h2>Front End Developer / JavaScript Expert / Youtuber</h2>
