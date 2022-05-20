@@ -26,7 +26,7 @@ export default function SidebBar() {
                 <NavLink activeclassname="active" className="about-link" to="/about">
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </NavLink>
-                <NavLink activeclassname="active" className="skills-link" to="/contact" >
+                <NavLink activeclassname="active" className="skills-link" to="/skills" >
                     <FontAwesomeIcon icon={faLightbulb} color="#4d4d4e" />
                 </NavLink>
                 <NavLink activeclassname="active" className="contact-link" to="/contact" >
