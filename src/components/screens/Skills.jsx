@@ -17,6 +17,14 @@ export default function Skills() {
         }, 3000)
     }, [])
 
+    useEffect(() => {
+        count !== 100 ?
+            setTimeout(() => {
+                setCount(count + 1)
+            }, 25)
+        : setCount(100)
+    })
+
 
     return (
         <div className='main-container'>
