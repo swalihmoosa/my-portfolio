@@ -51,23 +51,25 @@
                 position: relative;
 
                 .single-card{
-                    width: 175px;
-                    height: 175px;
+                    width: 31%;
                     margin-bottom: 25px;
-                    padding: 4% 3% 3% 3%;
+                    padding: 5% 4% 4% 5%;
                     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
                     position: relative;
                     background-color: #092c43;
                     border: 1px solid transparent;
                     transition: all .8s ease 0s;
-                    border-radius: 50%;
+                    border-radius: 38% 62% 63% 37% / 41% 44% 46% 59%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-wrap: wrap;
+                    z-index: 10;
+                    border: 2px solid transparent;
+                    
                     &:hover{
                         transform: scale(1.1);
-                        border: 1px solid #ffd700;
+                        border: 2px solid #ffd700;
                     }
 
                     .font-icon{
@@ -102,6 +104,17 @@
                         width: 100%;
                         text-align: center;
                     }
+                    // span{
+                    //     &:nth-child(1){
+                    //         position: absolute;
+                    //         top: 0;
+                    //         left: 0;
+                    //         width: 100%;
+                    //         height: 100%;
+                    //         border: 2px solid #ffd700;
+                    //         border-radius: 38% 62% 63% 37% / 41% 44% 46% 59%;
+                    //     }
+                    // }
                 }
             }
         }
