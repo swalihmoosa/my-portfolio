@@ -51,7 +51,11 @@ export default function Home() {
                     </Link>
 
                 </div>
-                {/* <Logo /> */}
+                {/* <div class="spin-container">
+                    <div class="shape">
+                        <div class="bd"></div>
+                    </div>
+                </div> */}
             </div>
     
             <Loader type="pacman" />

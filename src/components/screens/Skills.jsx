@@ -60,10 +60,6 @@ export default function Skills() {
         
                     <div class="skills">
                         <div class="single-card">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
                             <FontAwesomeIcon className='font-icon' icon={faPenRuler} color="#ffd700" />
                             <h6>{count}</h6>
                             <p>Happy to Free Services %</p>

@@ -111,15 +111,27 @@
                 }               
             }
         }
-        ul.contact-link{
+        div.contact-link{
             width: 40%;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             position: relative;
+            opacity: 0;
+            clear: both;
+            animation: fadeInUp 1s 1s;
+            animation-fill-mode: forwards;
 
-            li.single-card{
-                width: 48%;
+            div.small-links{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            a.single-card{
+                width: 150px;
+                height: 150px;
                 margin-bottom: 25px;
                 padding: 4% 3% 3% 3%;
                 box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
@@ -127,26 +139,36 @@
                 background-color: #092c43;
                 border: 2px solid transparent;
                 transition: all .8s ease 0s;
-                border-radius: 10px;
+                border-radius: 50%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
                 &:hover{
-                    animation: hinge 2s;
+                    animation: pulse 1s infinite;
+                    opacity: 1;
+                }
+                &.address{
+                    width: 250px;
+                    height: 250px;
+                    margin: 0 auto 25px;
+                    font-size: 38px;
+                }
+                &.navigations{
+                    width: 75px;
+                    height: 75px;
+                    font-size: 30px;
+                    // pa
                 }
 
-                div.time{
-                    margin-bottom: 10px;
-                    color: #ffd700;
-                    font-weight: 600;
-                    font-size: 14px;
-                    font-family: "Poppins";
-                }
                 h6{
                     color: #fff;
                     font-weight: 700;
                     font-size: 15px;
                     font-family: "Poppins";
-                    border-bottom: 1px solid #ffd700;
                     display: inline-block;
-                    padding-bottom: 3px;
                     margin-bottom: 10px;
                 }
                 p{

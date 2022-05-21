@@ -1,4 +1,5 @@
-import { faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faInstagram, faLinkedin, faStackOverflow, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faLocationDot, faPhone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
@@ -68,12 +69,43 @@ export default function About() {
                             </form>
                         </div>
                     </div> 
-                    <ul className='contact-link'>
-                        <li class="single-card">
-                            <FontAwesomeIcon className='font-icon' icon={faUsers} color="#ffd700" />
-                            <h6>7458961230</h6>
-                        </li>
-                    </ul>
+                    <div className='contact-link'>
+                        <div className='small-links'>
+                            <a href='tel:8129133008' target="_blank" class="single-card">
+                                <FontAwesomeIcon className='font-icon' icon={faPhone} color="#ffd700" />
+                                <h6>+91 8129133008</h6>
+                            </a>
+                            <a href='geo:124.028582,-29.201930' target="_blank" class="single-card address">
+                                <FontAwesomeIcon className='font-icon' icon={faLocationDot} color="#ffd700" />
+                                <h6>Chembayil house Kumbalakode (PO) Punjappadam, Pazhayannur, Thrissur 680587</h6>
+                            </a>
+                            <a href='mailto:swalihmoosa72@gmail.com' target="_blank" class="single-card mail">
+                                <FontAwesomeIcon className='font-icon' icon={faEnvelope} color="#ffd700" />
+                                <h6>swalihmoosa72<br />@gmail.com</h6>
+                            </a>
+                            <a href='https://github.com/swalihmoosa' target="_blank" class="single-card navigations">
+                                <FontAwesomeIcon className='font-icon' icon={faGithub} color="#ffd700" />
+                            </a>
+                            <a href='https://www.linkedin.com/in/swalih-moosa/' target="_blank" class="single-card navigations">
+                                <FontAwesomeIcon className='font-icon' icon={faLinkedin} color="#ffd700" />
+                            </a>
+                            <a href='https://stackoverflow.com/users/19142237/swalih-moosa' target="_blank" class="single-card navigations">
+                                <FontAwesomeIcon className='font-icon' icon={faStackOverflow} color="#ffd700" />
+                            </a>
+                            <a href='https://wa.me/8129133008' target="_blank" class="single-card navigations">
+                                <FontAwesomeIcon className='font-icon' icon={faWhatsapp} color="#ffd700" />
+                            </a>
+                            <a href='https://twitter.com/moosa_swalih' target="_blank" class="single-card navigations">
+                                <FontAwesomeIcon className='font-icon' icon={faTwitter} color="#ffd700" />
+                            </a>
+                            <a href='https://www.instagram.com/junior_moosa/' target="_blank" class="single-card navigations">
+                                <FontAwesomeIcon className='font-icon' icon={faInstagram} color="#ffd700" />
+                            </a>
+                            <a href='https://www.instagram.com/junior_moosa/' target="_blank" class="single-card navigations">
+                                <FontAwesomeIcon className='font-icon' icon={faInstagram} color="#ffd700" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Loader type="pacman" />
