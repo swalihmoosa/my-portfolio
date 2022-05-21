@@ -1,3 +1,5 @@
+import { faUsers } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../animations/AnimatedLetters'
@@ -66,6 +68,12 @@ export default function About() {
                             </form>
                         </div>
                     </div> 
+                    <ul className='contact-link'>
+                        <li class="single-card">
+                            <FontAwesomeIcon className='font-icon' icon={faUsers} color="#ffd700" />
+                            <h6>7458961230</h6>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <Loader type="pacman" />
