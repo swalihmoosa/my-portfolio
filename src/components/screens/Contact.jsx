@@ -1,4 +1,4 @@
-import { faGithub, faInstagram, faLinkedin, faStackOverflow, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faInstagram, faLinkedin, faStackOverflow, faTwitter, faWhatsapp, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faLocationDot, faPhone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
@@ -79,10 +79,12 @@ export default function About() {
                                 <FontAwesomeIcon className='font-icon' icon={faLocationDot} color="#ffd700" />
                                 <h6>Chembayil house Kumbalakode (PO) Punjappadam, Pazhayannur, Thrissur 680587</h6>
                             </a>
-                            <a href='mailto:swalihmoosa72@gmail.com' target="_blank" class="single-card mail">
+                            <a href='mailto:swalihmoosa72@gmail.com' target="_blank" class="single-card">
                                 <FontAwesomeIcon className='font-icon' icon={faEnvelope} color="#ffd700" />
                                 <h6>swalihmoosa72<br />@gmail.com</h6>
                             </a>
+                        </div>
+                        <div className="large-links">
                             <a href='https://github.com/swalihmoosa' target="_blank" class="single-card navigations">
                                 <FontAwesomeIcon className='font-icon' icon={faGithub} color="#ffd700" />
                             </a>
@@ -101,8 +103,8 @@ export default function About() {
                             <a href='https://www.instagram.com/junior_moosa/' target="_blank" class="single-card navigations">
                                 <FontAwesomeIcon className='font-icon' icon={faInstagram} color="#ffd700" />
                             </a>
-                            <a href='https://www.instagram.com/junior_moosa/' target="_blank" class="single-card navigations">
-                                <FontAwesomeIcon className='font-icon' icon={faInstagram} color="#ffd700" />
+                            <a href='https://www.facebook.com/swalih.moosa.7/' target="_blank" class="single-card navigations">
+                                <FontAwesomeIcon className='font-icon' icon={faFacebook} color="#ffd700" />
                             </a>
                         </div>
                     </div>

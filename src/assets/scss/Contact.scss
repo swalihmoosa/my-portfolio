@@ -113,9 +113,6 @@
         }
         div.contact-link{
             width: 40%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
             position: relative;
             opacity: 0;
             clear: both;
@@ -127,6 +124,28 @@
                 justify-content: space-between;
                 align-items: center;
                 flex-wrap: wrap;
+                a.single-card.address{
+                    width: 250px;
+                    height: 250px;
+                    margin: 0 auto 25px;
+                    font-size: 38px;
+                }
+            }
+            div.large-links{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 0 5%;
+                a.single-card.navigations{
+                    width: 50px;
+                    height: 50px;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                }
             }
 
             a.single-card{
@@ -145,22 +164,11 @@
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
+                font-size: 20px;
 
                 &:hover{
                     animation: pulse 1s infinite;
                     opacity: 1;
-                }
-                &.address{
-                    width: 250px;
-                    height: 250px;
-                    margin: 0 auto 25px;
-                    font-size: 38px;
-                }
-                &.navigations{
-                    width: 75px;
-                    height: 75px;
-                    font-size: 30px;
-                    // pa
                 }
 
                 h6{
