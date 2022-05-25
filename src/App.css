@@ -55,79 +55,48 @@ p{
     src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
-  }
+}
   
-  @font-face {
+@font-face {
     font-family: 'La Belle Aurore';
     src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2'),
       url('./assets/fonts/LaBelleAurore.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-  }
+}
   
-  @font-face {
+@font-face {
     font-family: 'Coolvetica';
     src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2'),
       url('./assets/fonts/CoolveticaRg-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-
-  .spin::before,
-  .spin::after {
-    box-sizing: inherit;
-    content: '';
+.container.home-page::before,.about-main-container::before,
+.contact-main-container::before,.skills-main-container::before{
+    content: '<html> \A   <body>';
+    white-space: pre;
+    font-family: 'La Belle Aurore', cursive;
+    color: #ffd700;
+    font-size: 18px;
     position: absolute;
-    width: 100%;
-    height: 100%;
-  }
+    top: 10%;
+    left: 10%;
+    animation: fadeIn 1s 1.7s backwards;
+    opacity: 0.6;
+}
 
-    
-    .spin:hover {
-      color: blue;
-    }
-  
-    .spin::before,
-    .spin::after {
-      top: 0;
-      left: 0;
-    }
-  
-    .spin::before {
-      border: 2px solid transparent; 
-    }
-  
-    .spin:hover::before {
-      border-top-color: blue; 
-      border-right-color: blue;
-      border-bottom-color: blue;
-  
-      transition:
-        border-top-color 0.15s linear, 
-        border-right-color 0.15s linear 0.10s,
-        border-bottom-color 0.15s linear 0.20s;
-    }
-  
-    .spin::after {
-      border: 0 solid transparent;
-    }
-  
-    .spin:hover::after {
-      border-top: 2px solid blue;
-      border-left-width: 2px; 
-      border-right-width: 2px;
-      transform: rotate(270deg); 
-      transition:
-        transform 0.4s linear 0s,
-        border-left-width 0s linear 0.35s; 
-    }
-	.circle {
-		border-radius: 100%;
-		box-shadow: none;
-		  
-	}
-	.circle::before,
-	.circle::after {
-	  border-radius: 100%;
-	}
+.container.home-page::after,.about-main-container::after,
+.contact-main-container::after,.skills-main-container::after{
+    content: '  </body> \A </html>';
+    white-space: pre;
+    font-family: 'La Belle Aurore', cursive;
+    color: #ffd700;
+    font-size: 18px;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    animation: fadeIn 1s 1.7s backwards;
+    opacity: 0.6;
+}

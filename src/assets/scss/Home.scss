@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: relative;
 
     .text-zone {
         h1 {
@@ -24,6 +25,7 @@
                 margin-top: -40px;
                 left: -15px;
                 opacity: 0.6;
+                animation: fadeIn 1s 1.7s backwards;
             }
     
             &:after {
