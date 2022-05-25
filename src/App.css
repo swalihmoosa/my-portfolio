@@ -82,7 +82,7 @@ p{
     font-size: 18px;
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 80px;
     animation: fadeIn 1s 1.7s backwards;
     opacity: 0.6;
 }
@@ -96,7 +96,7 @@ p{
     font-size: 18px;
     position: absolute;
     bottom: 10%;
-    left: 10%;
+    left: 80px;
     animation: fadeIn 1s 1.7s backwards;
     opacity: 0.6;
 }

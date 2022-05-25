@@ -7,6 +7,8 @@ import {
   faGithub,
   faYoutube,
   faSkype,
+  faStackOverflow,
+  faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
@@ -41,30 +43,30 @@ export default function SidebBar() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faLinkedin}  />
                     </a>
                 </li>
                 <li>
                     <a
-                        href="https://github.com/bobangajicsm"
+                        href="https://github.com/swalihmoosa"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faGithub}  />
                     </a>
                 </li>
                 <li>
                     <a
-                        href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
+                        href="https://stackoverflow.com/users/19142237/swalih-moosa"
                         rel="noreferrer"
                         target="_blank"
                     >
-                        <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faStackOverflow}  />
                     </a>
                 </li>
                 <li>
-                    <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
-                    <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
+                    <a href="https://wa.me/8129133008" rel="noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faWhatsapp}  />
                     </a>
                 </li>
             </ul>

@@ -65,76 +65,145 @@
                 &:after {
                     opacity: 1;
                 }
-        }
+            }
   
-        &:after {
-            content: '';
-            font-size: 9px;
-            letter-spacing: 2px;
-            position: absolute;
-            bottom: 0;
-            display: block;
-            width: 100%;
-            text-align: center;
-            opacity: 0;
-            -webkit-transition: all 0.3s ease-out;
-            transition: all 0.3s ease-out;
-        }
-  
-        &:first-child {
             &:after {
-                content: 'HOME';
+                content: '';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                -webkit-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
+            }
+  
+            &:first-child {
+                animation: first 5s infinite;
+
+                &:after {
+                    content: 'HOME';
+                }
+            }
+        }
+  
+        a.about-link {
+            animation: second 5s infinite;
+
+            &:after {
+                content: 'ABOUT';
+            }
+        }
+  
+        a.skills-link {
+            animation: third 5s infinite;
+
+            &:after {
+                content: 'SKILLS';
+            }
+        }
+        a.contact-link {
+            animation: fourth 5s infinite;
+
+            &:after {
+            content: 'CONTACT';
+            }
+        }
+    
+        a.active {
+            svg {
+            color: #ffd700;
             }
         }
     }
   
-    a.about-link {
-        &:after {
-            content: 'ABOUT';
-        }
-    }
-  
-      a.contact-link {
-        &:after {
-          content: 'CONTACT';
-        }
-      }
-      a.skills-link {
-        &:after {
-          content: 'SKILLS';
-        }
-      }
-  
-      a.active {
-        svg {
-          color: #ffd700;
-        }
-      }
-    }
-  
     ul {
-      position: absolute;
-      bottom: 20px;
-      width: 100%;
-      display: block;
-      padding: 0;
-      list-style: none;
-      text-align: center;
-      margin: 0;
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
   
-      li {
-        a {
-          padding: 7px 0;
-          display: block;
-          font-size: 20px;
-          line-height: 16px;
-          color: #4d4d4e;
+        li {
+            a {
+                padding: 7px 0;
+                display: block;
+                font-size: 20px;
+                line-height: 16px;
+                color: #4d4d4e;
   
-          &:hover {
-            color: #ffd700;
-          }
+                &:hover {
+                    color: #ffd700;
+                }
+            }
         }
-      }
     }
-  }
+}
   
+@keyframes first {
+    20% {
+      transform: scale(1.5);
+      color: #ffd700;
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+      }
+    80% {
+    transform: scale(1);
+    }
+}
+
+@keyframes second {
+    20% {
+      transform: scale(1);
+      color: #ffd700;
+    }
+    40% {
+      transform: scale(1.5);
+    }
+    60% {
+        transform: scale(1);
+      }
+    80% {
+    transform: scale(1);
+    }
+}
+@keyframes third {
+    20% {
+      transform: scale(1);
+      color: #ffd700;
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+        transform: scale(1.5);
+      }
+    80% {
+    transform: scale(1);
+    }
+}
+@keyframes fourth {
+    20% {
+      transform: scale(1);
+      color: #ffd700;
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+      }
+    80% {
+    transform: scale(1.5);
+    }
+}
