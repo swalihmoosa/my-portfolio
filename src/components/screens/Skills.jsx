@@ -51,11 +51,7 @@ export default function Skills() {
                             the project's completion. I guarantee a commitment during work on
                             your project.
                         </p>
-                        <p>
-                            If I need to define myself in one sentence that would be a family
-                            person, father of a beautiful daughter, a sports fanatic,
-                            photography enthusiast, and tech-obsessed!!!
-                        </p>
+
                     </div>
         
                     <div class="skills">

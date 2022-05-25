@@ -27,42 +27,43 @@ export default function About() {
                 <div className="second-container">
                     <div className="text-zone">
                         <p>
-                            I'm very ambitious front-end developer looking for a role in
+                            I'm very ambitious full-stack developer looking for a role in
                             established IT company with the opportunity to work with the latest
                             technologies on challenging and diverse projects.
                         </p>
-                        <p align="LEFT">
+                        <p>
                             I'm quietly confident, naturally curious, and perpetually working on
                             improving my chops one design problem at a time.
                         </p>
                         <p>
                             If I need to define myself in one sentence that would be a family
-                            person, father of a beautiful daughter, a sports fanatic,
-                            photography enthusiast, and tech-obsessed!!!
+                            person,son of a loving father and mother,younger brother of three and 
+                            elder brother of one.A sports fanatic, a good reader, music lover,
+                            photography enthusiast, and tech-obsessed..!!!
                         </p>
                     </div>
         
                     <div class="experience">
                         <div class="single-card">
-                            <div class="time">2019 - PRESENT</div>
-                            <h6>Freelance Web Developer</h6>
-                            <p>Working happily on my own web projects</p>
+                            <div class="time">2021 - PRESENT</div>
+                            <h6>Software Engineer</h6>
+                            <p>Works as a Software Engineer in Steyp Private Limited</p>
                         </div>
                         <div class="single-card">
-                            <div class="time">2018 - 2019</div>
-                            <h6>Lead Web Developer</h6>
-                            <p>Beautiful project for a major digital agency</p>
+                            <div class="time">2020 - 2021</div>
+                            <h6>Software Intern</h6>
+                            <p>Completed my FullStack development internship from Network Academy, Ernakulam</p>
                         </div>
 
                         <div class="single-card">
-                            <div class="time">2017 - 2018</div>
-                            <h6>Senior Web Designer</h6>
-                            <p>Inhouse web designer for ecommerce firm</p>
+                            <div class="time">2017 - 2020</div>
+                            <h6>Bsc Computer Science</h6>
+                            <p>Completed my Bsc in computer science from DonBosco College Mannuthy, Thrissur</p>
                         </div>
                         <div class="single-card">
-                            <div class="time">2016 - 2017</div>
-                            <h6>Junior Web Designer</h6>
-                            <p>Junior web designer for small web agency</p>
+                            <div class="time">2015 - 2017</div>
+                            <h6>Higher Secondary</h6>
+                            <p>Completed my requirements for higher secondary from St. Mary's HSS Arakulam</p>
                         </div>
                     </div> 
                 </div>

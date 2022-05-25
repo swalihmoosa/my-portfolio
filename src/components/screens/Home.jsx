@@ -61,11 +61,13 @@ export default function Home() {
                     </div>
 
                 </div>
-                {/* <div class="spin-container">
-                    <div class="shape">
-                        <div class="bd"></div>
+                <div className="image">
+                    <div class="spin-container">
+                        <div class="shape">
+                            <div class="bd"></div>
+                        </div>
                     </div>
-                </div> */}
+                </div>
             </div>
             <Loader type="pacman" />
       </>
