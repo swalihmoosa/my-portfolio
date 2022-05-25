@@ -15,7 +15,7 @@ export default function About() {
     }, [])
 
     return (
-        <div className='main-container'>
+        <div className='about-main-container'>
             <div className="container about-page">
                 <h1>
                     <AnimatedLetters

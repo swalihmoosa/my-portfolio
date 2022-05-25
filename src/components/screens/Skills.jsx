@@ -27,8 +27,8 @@ export default function Skills() {
 
 
     return (
-        <div className='main-container'>
-            <div className="container about-page">
+        <div className='skills-main-container'>
+            <div className="container skill-page">
                 <h1>
                     <AnimatedLetters
                         letterClass={letterClass}

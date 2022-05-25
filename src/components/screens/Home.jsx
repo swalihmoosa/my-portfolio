@@ -46,9 +46,19 @@ export default function Home() {
                     </h1>
                     <h2>Full Stack Developer</h2>
 
-                    <Link to="/contact" className="flat-button">
-                    CONTACT ME
-                    </Link>
+                    <div className="button-container">
+                        <Link to="/contact" className="flat-button contact">
+                            <p>
+                                CONTACT ME
+                            </p>
+                        </Link>
+                        <Link to="/contact" className="flat-button">
+                            <p>
+                                DOWNLOAD CV
+                            </p>
+                        </Link>
+
+                    </div>
 
                 </div>
                 {/* <div class="spin-container">

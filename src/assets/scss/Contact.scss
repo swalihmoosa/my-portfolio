@@ -1,4 +1,4 @@
-.main-container{
+.contact-main-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,6 +60,43 @@
                             position: relative;
                             animation: fadeInUp 1s 1s;
                             animation-fill-mode: forwards;
+
+                            input[type='text'],
+                            input[type='email'] {
+                                width: 100%;
+                                border: 0;
+                                background: #115173;
+                                height: 50px;
+                                font-size: 16px;
+                                color: #fff;
+                                padding: 0 20px;
+                                box-sizing: border-box;
+                            }
+                            textarea {
+                                width: 100%;
+                                border: 0;
+                                background: #115173;
+                                height: 50px;
+                                font-size: 16px;
+                                color: #fff;
+                                padding: 20px;
+                                box-sizing: border-box;
+                                min-height: 150px;
+                            }
+                            .flat-button {
+                                color: #ffd700;
+                                font-size: 11px;
+                                letter-spacing: 3px;
+                                text-decoration: none;
+                                padding: 8px 10px;
+                                border: 1px solid #ffd700;
+                                float: left;
+                                border-radius: 4px;
+                                background: 0 0;
+                                text-transform: uppercase;
+                                float: right;
+                                text-align: center;
+                            }
                         }
                         li.half {
                             width: 49%;
@@ -72,121 +109,85 @@
                             }
                         }
                     }
-                    input[type='text'],
-                    input[type='email'] {
-                        width: 100%;
-                        border: 0;
-                        background: #115173;
-                        height: 50px;
-                        font-size: 16px;
-                        color: #fff;
-                        padding: 0 20px;
-                        box-sizing: border-box;
-                    }
-                    textarea {
-                        width: 100%;
-                        border: 0;
-                        background: #115173;
-                        height: 50px;
-                        font-size: 16px;
-                        color: #fff;
-                        padding: 20px;
-                        box-sizing: border-box;
-                        min-height: 150px;
-                    }
-                    .flat-button {
-                        color: #ffd700;
-                        font-size: 11px;
-                        letter-spacing: 3px;
-                        text-decoration: none;
-                        padding: 8px 10px;
-                        border: 1px solid #ffd700;
-                        float: left;
-                        border-radius: 4px;
-                        background: 0 0;
-                        text-transform: uppercase;
-                        float: right;
-                        text-align: center;
-                    }
                 }               
             }
-        }
-        div.contact-link{
-            width: 40%;
-            position: relative;
-            opacity: 0;
-            clear: both;
-            animation: fadeInUp 1s 1s;
-            animation-fill-mode: forwards;
-
-            div.small-links{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-                a.single-card.address{
-                    width: 250px;
-                    height: 250px;
-                    margin: 0 auto 25px;
-                    font-size: 38px;
+            div.contact-link{
+                width: 40%;
+                position: relative;
+                opacity: 0;
+                clear: both;
+                animation: fadeInUp 1s 1s;
+                animation-fill-mode: forwards;
+    
+                div.small-links{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    a.single-card.address{
+                        width: 250px;
+                        height: 250px;
+                        margin: 0 auto 25px;
+                        font-size: 38px;
+                    }
                 }
-            }
-            div.large-links{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-                padding: 0 5%;
-                a.single-card.navigations{
-                    width: 50px;
-                    height: 50px;
-                    padding: 0;
+                div.large-links{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    padding: 0 5%;
+                    a.single-card.navigations{
+                        width: 50px;
+                        height: 50px;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 25px;
+                    }
+                }
+    
+                a.single-card{
+                    width: 150px;
+                    height: 150px;
+                    margin-bottom: 25px;
+                    padding: 4% 3% 3% 3%;
+                    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+                    position: relative;
+                    background-color: #092c43;
+                    border: 2px solid transparent;
+                    transition: all .8s ease 0s;
+                    border-radius: 50%;
+                    text-align: center;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-size: 25px;
-                }
-            }
-
-            a.single-card{
-                width: 150px;
-                height: 150px;
-                margin-bottom: 25px;
-                padding: 4% 3% 3% 3%;
-                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-                position: relative;
-                background-color: #092c43;
-                border: 2px solid transparent;
-                transition: all .8s ease 0s;
-                border-radius: 50%;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                font-size: 20px;
-
-                &:hover{
-                    animation: pulse 1s infinite;
-                    opacity: 1;
-                }
-
-                h6{
-                    color: #fff;
-                    font-weight: 700;
-                    font-size: 15px;
-                    font-family: "Poppins";
-                    display: inline-block;
-                    margin-bottom: 10px;
-                }
-                p{
-                    color: #fff;
-                    font-family: "Poppins";
-                    font-weight: 300;
-                    max-width: fit-content;
-                    font-size: 14px !important;
-                    line-height: 20px;
-                    margin-bottom: 15px;
+                    flex-wrap: wrap;
+                    font-size: 20px;
+    
+                    &:hover{
+                        animation: pulse 1s infinite;
+                        opacity: 1;
+                    }
+    
+                    h6{
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 15px;
+                        font-family: "Poppins";
+                        display: inline-block;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        color: #fff;
+                        font-family: "Poppins";
+                        font-weight: 300;
+                        max-width: fit-content;
+                        font-size: 14px !important;
+                        line-height: 20px;
+                        margin-bottom: 15px;
+                    }
                 }
             }
         }
