@@ -43,13 +43,17 @@ export default function Skills() {
                             <b>jQuery</b>,<b>sass</b>,<b>bootstrap</b>,<b>reactjs</b> and also in the back-end technologies like
                             <b>python</b>,<b>django</b>
                         </p>
-                        <p align="LEFT">
+                        <p>
                             I’m not a designer but I have a good sense of aesthetics, and
                             experience in responsive, mobile-first web design. I put special
                             effort into optimizing my code and providing the best user
                             experience. I would love to give you any kind of support also after
                             the project's completion. I guarantee a commitment during work on
                             your project.
+                        </p>
+                        <p>
+                            I can use languages like <b>English</b>,<b>Hindi</b>,<b>Malayalam</b> and 
+                            <b>Tamil</b>
                         </p>
 
                     </div>

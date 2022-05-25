@@ -79,7 +79,7 @@ p{
     color: #ffd700;
     font-size: 18px;
     position: absolute;
-    top: 10%;
+    top: 30px;
     left: 80px;
     animation: fadeIn 1s 1s backwards;
     opacity: 0.6;
@@ -93,7 +93,7 @@ p{
     color: #ffd700;
     font-size: 18px;
     position: absolute;
-    bottom: 10%;
+    bottom: 30px;
     left: 80px;
     animation: fadeIn 1s 1s backwards;
     opacity: 0.6;

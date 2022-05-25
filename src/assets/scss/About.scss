@@ -11,7 +11,6 @@
             color: #ffd700;
             font-size: 56px;
             line-height: 53px;
-            margin-bottom: 40px;
             font-family: 'Coolvetica';
             font-weight: 400;
             width: 100%;
@@ -22,8 +21,8 @@
                 color: #ffd700;
                 font-size: 18px;
                 position: absolute;
-                margin-top: -40px;
-                left: -15px;
+                margin-top: -20px;
+                margin-left: -30px;
                 animation: fadeIn 1s 1s backwards;
                 opacity: 0.6;
               }
@@ -204,5 +203,35 @@
                 }
             }
         }
+    }
+}
+
+@media all and (max-width: 1280px){
+    .about-main-container .container.about-page{
+        padding: 5% 5% 0 10%;
+        div.second-container .experience{
+            width: 53%;
+        }
+    }
+}
+@media all and (max-width: 981px){
+    .about-main-container{
+        height: auto;
+    }
+    .about-main-container .container.about-page{
+        padding: 10% 5% 5% 12%;
+    }
+    .about-main-container .container.about-page h1{
+        text-align: center;
+    }
+    .about-main-container .container.about-page div.second-container .text-zone{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .about-main-container .container.about-page h1{
+        margin-bottom: 25px;
+    }
+    .about-main-container .container.about-page div.second-container .experience{
+        width: 100%;
     }
 }
