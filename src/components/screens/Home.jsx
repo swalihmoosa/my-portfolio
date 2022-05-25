@@ -67,7 +67,6 @@ export default function Home() {
                     </div>
                 </div> */}
             </div>
-    
             <Loader type="pacman" />
       </>
     )
