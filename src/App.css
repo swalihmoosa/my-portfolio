@@ -25,7 +25,8 @@ body {
 	min-width: 320px;
 	font-weight: 500;
 	background: #022c43;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     display: block;
 }
 input,textarea,select{
@@ -79,8 +80,8 @@ p{
     color: #ffd700;
     font-size: 18px;
     position: absolute;
-    top: 30px;
-    left: 80px;
+    top: 15px;
+    left: 70px;
     animation: fadeIn 1s 1s backwards;
     opacity: 0.6;
 }
@@ -93,8 +94,8 @@ p{
     color: #ffd700;
     font-size: 18px;
     position: absolute;
-    bottom: 30px;
-    left: 80px;
+    bottom: 15px;
+    left: 70px;
     animation: fadeIn 1s 1s backwards;
     opacity: 0.6;
 }
