@@ -139,15 +139,61 @@
                     transform: translateY(-50%);
                     left: 50%;
                     background-color: #ffd700;
+                    overflow: visible;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: #022c43;
+                        border: 3px solid #ffd700;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: #022c43;
+                        border: 3px solid #ffd700;
+                    }
                 }
                 .single-card{
-                    width: 45%;
+                    width: 46%;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     border: 2px solid #fff;
                     padding: 2%;
                     height: 100px;
+                    position: absolute;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: #ffd700;
+                        border: 3px solid #022c43;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 0;
+                        height: 0;
+                        clear: both;
+                    }
                     .font-icon{
                         font-size: 22px;
                         margin-bottom: 10px;
@@ -173,18 +219,125 @@
                             text-align: center;
                         }
                     }
-                    &:nth-child(1){
-                        
+                    &.first-child{
+                        top: 14.28%;
+                        left: 0;
+                        &::before{
+                            border-top: 8px solid transparent;
+                            border-bottom: 8px solid transparent;
+                            border-right: 8px solid transparent;
+                            border-left: 8px solid #fff;
+                            right: -18px;
+                        }
+                        &::after{
+                            right: -42px;
+                        }
+                        p{
+                            text-align: right;
+                        }
+                        h6{
+                            text-align: right;
+                        }
                     }
-                    &:nth-child(2){
+                    &.second-child{
+                        top: 28.57%;
+                        right: 0;
+                        &::before{
+                            left: -18px;
+                            border-top: 8px solid transparent;
+                            border-bottom: 8px solid transparent;
+                            border-left: 8px solid transparent;
+                            border-right: 8px solid #fff;
+                        }
+                        &::after{
+                            left: -39px;
+                        }
+                        p{
+                            text-align: left;
+                        }
+                        h6{
+                            text-align: left;
+                        }
                     }
-                    &:nth-child(3){
+                    &.third-child{
+                        top: 42.85%;
+                        left: 0;
+                        &::before{
+                            border-top: 8px solid transparent;
+                            border-bottom: 8px solid transparent;
+                            border-right: 8px solid transparent;
+                            border-left: 8px solid #fff;
+                            right: -18px;
+                        }
+                        &::after{
+                            right: -42px;
+                        }
+                        p{
+                            text-align: right;
+                        }
+                        h6{
+                            text-align: right;
+                        }
                     }
-                    &:nth-child(4){
+                    &.fourth-child{
+                        top: 57.14%;
+                        right: 0;
+                        &::before{
+                            left: -18px;
+                            border-top: 8px solid transparent;
+                            border-bottom: 8px solid transparent;
+                            border-left: 8px solid transparent;
+                            border-right: 8px solid #fff;
+                        }
+                        &::after{
+                            left: -39px;
+                        }
+                        p{
+                            text-align: left;
+                        }
+                        h6{
+                            text-align: left;
+                        }
                     }
-                    &:nth-child(5){
+                    &.fifth-child{
+                        top: 71.42%;
+                        left: 0;
+                        &::before{
+                            border-top: 8px solid transparent;
+                            border-bottom: 8px solid transparent;
+                            border-right: 8px solid transparent;
+                            border-left: 8px solid #fff;
+                            right: -18px;
+                        }
+                        &::after{
+                            right: -42px;
+                        }
+                        p{
+                            text-align: right;
+                        }
+                        h6{
+                            text-align: right;
+                        }
                     }
-                    &:nth-child(6){
+                    &.sixth-child{
+                        top: 85.74%;
+                        right: 0;
+                        &::before{
+                            left: -18px;
+                            border-top: 8px solid transparent;
+                            border-bottom: 8px solid transparent;
+                            border-left: 8px solid transparent;
+                            border-right: 8px solid #fff;
+                        }
+                        &::after{
+                            left: -39px;
+                        }
+                        p{
+                            text-align: left;
+                        }
+                        h6{
+                            text-align: left;
+                        }
                     }
                 }
             }

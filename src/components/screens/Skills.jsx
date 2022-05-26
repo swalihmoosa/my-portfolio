@@ -91,47 +91,47 @@ export default function Skills() {
                     </div>  */}
                     <div class="skills">
                         <hr className="line" />
-                        <div class="single-card">
+                        <div class="single-card first-child">
                             <FontAwesomeIcon className='font-icon' icon={faPenRuler} color="#ffd700" />
                             <div className="description">
                                 <h6>{count}</h6>
                                 <p>Happy to Free Services %</p>
                             </div>
                         </div>
-                        <div class="single-card">
-                            <FontAwesomeIcon className='font-icon' icon={faUsers} color="#ffd700" />
+                        <div class="single-card second-child">
                             <div className="description">
                                 <h6>{count}</h6>
                                 <p>am happy to Helping Others %</p>
                             </div>
+                            <FontAwesomeIcon className='font-icon' icon={faUsers} color="#ffd700" />
                         </div>
-                        <div class="single-card">
+                        <div class="single-card third-child">
                             <FontAwesomeIcon className='font-icon' icon={faMedal} color="#ffd700" />
                             <div className="description">
                                 <h6>{count}</h6>
                                 <p>You can share any Tech related ideas with Me%</p>
                             </div>
                         </div>
-                        <div class="single-card">
-                            <FontAwesomeIcon className='font-icon' icon={faLightbulb} color="#ffd700" />
+                        <div class="single-card fourth-child">
                             <div className="description">
                                 <h6>{count}</h6>
                                 <p>Innovating New Ideas %</p>
                             </div>
+                            <FontAwesomeIcon className='font-icon' icon={faLightbulb} color="#ffd700" />
                         </div>
-                        <div class="single-card">
+                        <div class="single-card fifth-child">
                             <FontAwesomeIcon className='font-icon' icon={faMugHot} color="#ffd700" />
                             <div className="description">
                                 <h6>{count}</h6>
                                 <p>Talk with me like you'r Coffee friend</p>
                             </div>
                         </div>
-                        <div class="single-card">
-                            <FontAwesomeIcon className='font-icon' icon={faHourglass} color="#ffd700" />
+                        <div class="single-card sixth-child">
                             <div className="description">
                                 <h6>{count}</h6>
                                 <p>Implement ideas with propor Time.</p>
                             </div>
+                            <FontAwesomeIcon className='font-icon' icon={faHourglass} color="#ffd700" />
                         </div>
                     </div> 
                 </div>
