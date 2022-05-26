@@ -67,59 +67,124 @@
                     }
                 }
             }
+            // .skills{
+            //     width: 40%;
+            //     display: flex;
+            //     justify-content: space-between;
+            //     flex-wrap: wrap;
+            //     position: relative;
+            //     animation: fadeIn 1s 1s backwards;
+
+            //     .single-card{
+            //         width: 31%;
+            //         margin-bottom: 25px;
+            //         padding: 5% 4% 4% 5%;
+            //         box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+            //         position: relative;
+            //         background-color: #092c43;
+            //         border: 1px solid transparent;
+            //         transition: all .8s ease 0s;
+            //         border-radius: 38% 62% 63% 37% / 41% 44% 46% 59%;
+            //         display: flex;
+            //         justify-content: center;
+            //         align-items: center;
+            //         flex-wrap: wrap;
+            //         z-index: 10;
+            //         border: 2px solid transparent;
+                    
+            //         &:hover{
+            //             transform: scale(1.1);
+            //             border: 2px solid #ffd700;
+            //         }
+
+            //         .font-icon{
+            //             font-size: 22px;
+            //             margin-bottom: 10px;
+            //         }
+            //         h6{
+                        // color: #fff;
+                        // font-weight: 700;
+                        // font-size: 20px;
+                        // font-family: "Poppins";
+                        // margin-bottom: 10px;
+                        // width: 100%;
+                        // text-align: center;
+            //         }
+            //         p{
+            //             color: #fff;
+            //             font-family: "Poppins";
+            //             font-weight: 300;
+            //             max-width: fit-content;
+            //             font-size: 14px !important;
+            //             line-height: 20px;
+            //             margin-bottom: 15px;
+            //             width: 100%;
+            //             text-align: center;
+            //         }
+            //     }
+            // }
             .skills{
-                width: 40%;
+                width: 50%;
+                position: relative;
+                border-radius: 50px;
+                height: 60vh;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
-                position: relative;
-                animation: fadeIn 1s 1s backwards;
-
+                hr.line{
+                    width: 2px;
+                    height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 50%;
+                    background-color: #ffd700;
+                }
                 .single-card{
-                    width: 31%;
-                    margin-bottom: 25px;
-                    padding: 5% 4% 4% 5%;
-                    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-                    position: relative;
-                    background-color: #092c43;
-                    border: 1px solid transparent;
-                    transition: all .8s ease 0s;
-                    border-radius: 38% 62% 63% 37% / 41% 44% 46% 59%;
+                    width: 45%;
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
-                    flex-wrap: wrap;
-                    z-index: 10;
-                    border: 2px solid transparent;
-                    
-                    &:hover{
-                        transform: scale(1.1);
-                        border: 2px solid #ffd700;
-                    }
-
+                    border: 2px solid #fff;
+                    padding: 2%;
+                    height: 100px;
                     .font-icon{
                         font-size: 22px;
                         margin-bottom: 10px;
                     }
-                    h6{
-                        color: #fff;
-                        font-weight: 700;
-                        font-size: 20px;
-                        font-family: "Poppins";
-                        margin-bottom: 10px;
-                        width: 100%;
-                        text-align: center;
+                    .description{
+                        width: 95%;
+                        h6{
+                            color: #fff;
+                            font-weight: 700;
+                            font-size: 20px;
+                            font-family: "Poppins";
+                            margin-bottom: 10px;
+                            width: 100%;
+                            text-align: center;
+                        }
+                        p{
+                            color: #fff;
+                            font-family: "Poppins";
+                            font-weight: 300;
+                            font-size: 14px !important;
+                            line-height: 20px;
+                            width: 100%;
+                            text-align: center;
+                        }
                     }
-                    p{
-                        color: #fff;
-                        font-family: "Poppins";
-                        font-weight: 300;
-                        max-width: fit-content;
-                        font-size: 14px !important;
-                        line-height: 20px;
-                        margin-bottom: 15px;
-                        width: 100%;
-                        text-align: center;
+                    &:nth-child(1){
+                        
+                    }
+                    &:nth-child(2){
+                    }
+                    &:nth-child(3){
+                    }
+                    &:nth-child(4){
+                    }
+                    &:nth-child(5){
+                    }
+                    &:nth-child(6){
                     }
                 }
             }

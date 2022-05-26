@@ -132,3 +132,24 @@ p{
 .pacman div:nth-child(3), .pacman > div:nth-child(4), .pacman > div:nth-child(5), .pacman > div:nth-child(6) {
     background-color: #ffd700 !important;
 }
+
+@media all and (max-width: 480px){
+    .container.home-page::after,.about-main-container::after,
+    .contact-main-container::after,.skills-main-container::after,
+    .container.home-page::before,.about-main-container::before,
+    .contact-main-container::before,.skills-main-container::before{
+        left: 55px;
+    }
+    .container.home-page::after,.about-main-container::after,
+    .contact-main-container::after,.skills-main-container::after{
+        bottom: 0;
+    }
+}
+@media all and (max-width: 360px){
+    .container.home-page::after,.about-main-container::after,
+    .contact-main-container::after,.skills-main-container::after,
+    .container.home-page::before,.about-main-container::before,
+    .contact-main-container::before,.skills-main-container::before{
+        display: none;
+    }
+}

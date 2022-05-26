@@ -39,9 +39,9 @@ export default function Skills() {
                 <div className="second-container">
                     <div className="text-zone">
                         <p>
-                            Expert in front-end development including technologies like <b>html</b>,<b>css</b>,<b>javascript</b>,
-                            <b>jQuery</b>,<b>sass</b>,<b>bootstrap</b>,<b>reactjs</b> and also in the back-end technologies like
-                            <b>python</b>,<b>django</b>
+                            Expert in front-end development including technologies 
+                            like <b>html</b> , <b>css</b> , <b>javascript</b> , <b>jQuery</b> , <b>sass</b> , <b>bootstrap</b> , <b>reactjs</b> and 
+                            also in the back-end technologies like <b>python</b> , <b>django</b>
                         </p>
                         <p>
                             I’m not a designer but I have a good sense of aesthetics, and
@@ -52,13 +52,12 @@ export default function Skills() {
                             your project.
                         </p>
                         <p>
-                            I can use languages like <b>English</b>,<b>Hindi</b>,<b>Malayalam</b> and 
-                            <b>Tamil</b>
+                            I can use languages like <b>English</b> , <b>Hindi</b> , <b>Malayalam</b> and <b>Tamil</b>
                         </p>
 
                     </div>
         
-                    <div class="skills">
+                    {/* <div class="skills">
                         <div class="single-card">
                             <FontAwesomeIcon className='font-icon' icon={faPenRuler} color="#ffd700" />
                             <h6>{count}</h6>
@@ -88,6 +87,51 @@ export default function Skills() {
                             <FontAwesomeIcon className='font-icon' icon={faHourglass} color="#ffd700" />
                             <h6>{count}</h6>
                             <p>Implement ideas with propor Time.</p>
+                        </div>
+                    </div>  */}
+                    <div class="skills">
+                        <hr className="line" />
+                        <div class="single-card">
+                            <FontAwesomeIcon className='font-icon' icon={faPenRuler} color="#ffd700" />
+                            <div className="description">
+                                <h6>{count}</h6>
+                                <p>Happy to Free Services %</p>
+                            </div>
+                        </div>
+                        <div class="single-card">
+                            <FontAwesomeIcon className='font-icon' icon={faUsers} color="#ffd700" />
+                            <div className="description">
+                                <h6>{count}</h6>
+                                <p>am happy to Helping Others %</p>
+                            </div>
+                        </div>
+                        <div class="single-card">
+                            <FontAwesomeIcon className='font-icon' icon={faMedal} color="#ffd700" />
+                            <div className="description">
+                                <h6>{count}</h6>
+                                <p>You can share any Tech related ideas with Me%</p>
+                            </div>
+                        </div>
+                        <div class="single-card">
+                            <FontAwesomeIcon className='font-icon' icon={faLightbulb} color="#ffd700" />
+                            <div className="description">
+                                <h6>{count}</h6>
+                                <p>Innovating New Ideas %</p>
+                            </div>
+                        </div>
+                        <div class="single-card">
+                            <FontAwesomeIcon className='font-icon' icon={faMugHot} color="#ffd700" />
+                            <div className="description">
+                                <h6>{count}</h6>
+                                <p>Talk with me like you'r Coffee friend</p>
+                            </div>
+                        </div>
+                        <div class="single-card">
+                            <FontAwesomeIcon className='font-icon' icon={faHourglass} color="#ffd700" />
+                            <div className="description">
+                                <h6>{count}</h6>
+                                <p>Implement ideas with propor Time.</p>
+                            </div>
                         </div>
                     </div> 
                 </div>

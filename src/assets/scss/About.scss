@@ -239,10 +239,80 @@
     }
 }
 @media all and (max-width: 768px){
+    .about-main-container{
+        padding: 15% 5% 12% 90px;
+    }
 }
 @media all and (max-width: 640px){
+    .about-main-container{
+        padding: 100px 30px 20% 90px;
+    }
+    .about-main-container .container.about-page div.second-container .experience .single-card{
+        width: 100%;
+        margin-bottom: 0;
+        border-radius: 0;
+        padding: 6% 5% 5% 3%;
+        box-shadow: none;
+        &:hover{
+            transform: scale(1);
+        }
+        &:nth-child(1){
+            border: none;
+            border-left: 2px solid #ffd700;
+            border-bottom: 2px solid #ffd700;
+            border-radius: 0 0 0 20px;
+            &:hover{
+                border: none;
+                border-left: 2px solid #ffd700;
+                border-bottom: 2px solid #ffd700;
+            }
+        }
+        &:nth-child(2){
+            border: none;
+            border-right: 2px solid #ffd700;
+            border-bottom: 2px solid #ffd700;
+            border-radius: 0 0 20px 0;
+            &:hover{
+                border: none;
+                border-right: 2px solid #ffd700;
+                border-bottom: 2px solid #ffd700;
+            }
+        }
+        &:nth-child(3){
+            border: none;
+            border-left: 2px solid #ffd700;
+            border-bottom: 2px solid #ffd700;
+            border-radius: 0 0 0 20px;
+            &:hover{
+                border: none;
+                border-left: 2px solid #ffd700;
+                border-bottom: 2px solid #ffd700;
+            }
+        }
+        &:nth-child(4){
+            border: none;
+            border-right: 2px solid #ffd700;
+            border-bottom: 2px solid #ffd700;
+            border-radius: 0 0 20px 0;
+            &:hover{
+                border: none;
+                border-right: 2px solid #ffd700;
+                border-bottom: 2px solid #ffd700;
+            }
+        }
+    }
 }
 @media all and (max-width: 480px){
+    .about-main-container .container.about-page h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .about-main-container{
+        padding: 100px 30px 30% 70px;
+    }
 }
-@media all and (max-width: 360px){
+@media (max-width: 360px){
+    .about-main-container {
+        padding: 50px 30px 10% 70px;
+    }
 }
