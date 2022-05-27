@@ -247,6 +247,10 @@
     .about-main-container{
         padding: 100px 30px 20% 90px;
     }
+    .about-main-container .container.about-page h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
     .about-main-container .container.about-page div.second-container .experience .single-card{
         width: 100%;
         margin-bottom: 0;
@@ -303,10 +307,6 @@
     }
 }
 @media all and (max-width: 480px){
-    .about-main-container .container.about-page h1{
-        font-size: 40px;
-        margin-bottom: 30px;
-    }
     .about-main-container{
         padding: 100px 30px 30% 70px;
     }

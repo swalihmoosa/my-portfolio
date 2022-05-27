@@ -36,6 +36,20 @@ export default function Skills() {
                         idx={10}
                     />
                 </h1>
+                <h1 className='responsive one' >
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={['S', 'k', 'i', 'l', 'l', 's', '', '&',]}
+                        idx={10}
+                    />
+                </h1>
+                <h1 className='responsive two'>
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={['e','x','p','e','r','i','e','n','c','e']}
+                        idx={10}
+                    />
+                </h1>
                 <div className="second-container">
                     <div className="text-zone">
                         <p>
@@ -56,41 +70,15 @@ export default function Skills() {
                         </p>
 
                     </div>
-        
-                    {/* <div class="skills">
-                        <div class="single-card">
-                            <FontAwesomeIcon className='font-icon' icon={faPenRuler} color="#ffd700" />
-                            <h6>{count}</h6>
-                            <p>Happy to Free Services %</p>
-                        </div>
-                        <div class="single-card">
-                            <FontAwesomeIcon className='font-icon' icon={faUsers} color="#ffd700" />
-                            <h6>{count}</h6>
-                            <p>am happy to Helping Others %</p>
-                        </div>
-                        <div class="single-card">
-                            <FontAwesomeIcon className='font-icon' icon={faMedal} color="#ffd700" />
-                            <h6>{count}</h6>
-                            <p>You can share any Tech related ideas with Me%</p>
-                        </div>
-                        <div class="single-card">
-                            <FontAwesomeIcon className='font-icon' icon={faLightbulb} color="#ffd700" />
-                            <h6>{count}</h6>
-                            <p>Innovating New Ideas %</p>
-                        </div>
-                        <div class="single-card">
-                            <FontAwesomeIcon className='font-icon' icon={faMugHot} color="#ffd700" />
-                            <h6>{count}</h6>
-                            <p>Talk with me like you'r Coffee friend</p>
-                        </div>
-                        <div class="single-card">
-                            <FontAwesomeIcon className='font-icon' icon={faHourglass} color="#ffd700" />
-                            <h6>{count}</h6>
-                            <p>Implement ideas with propor Time.</p>
-                        </div>
-                    </div>  */}
                     <div class="skills">
-                        <hr className="line" />
+                        <div className="line" >
+                            <div className="round first"></div>
+                            <div className="round second"></div>
+                            <div className="round third"></div>
+                            <div className="round fourth"></div>
+                            <div className="round fifth"></div>
+                            <div className="round sixth"></div>
+                        </div>
                         <div class="single-card first-child">
                             <FontAwesomeIcon className='font-icon' icon={faPenRuler} color="#ffd700" />
                             <div className="description">
