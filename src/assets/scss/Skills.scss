@@ -338,6 +338,9 @@
         text-align: center;
         margin-bottom: 40px;
     }
+    .skills-main-container .container.skill-page div.second-container .skills{
+        height: 600px;
+    }
 }
 @media (max-width: 768px){
     .skills-main-container{
@@ -356,7 +359,7 @@
         left: 0;
     }
     .skills-main-container .container.skill-page div.second-container .skills .single-card{
-        width: 90%;
+        width: 93%;
     }
     .skills-main-container .container.skill-page div.second-container .skills .single-card{
         &.first-child{
@@ -415,9 +418,7 @@
         &.sixth-child{
             top: 88.74%;
         }
-    }
-    .skills-main-container .container.skill-page div.second-container .skills{
-        height: 100vh;
+        
     }
     .skills-main-container .container.skill-page div.second-container .skills div.line{
         .round.first {
@@ -442,13 +443,16 @@
     .skills-main-container .container.skill-page div.second-container .skills .single-card{
         padding: 15px;
     }
+    .skills-main-container .container.skill-page div.second-container .skills{
+        height: 800px;
+    }
 }
 @media (max-width: 480px){
     .skills-main-container{
         padding: 100px 30px 30% 70px;
     }
     .skills-main-container .container.skill-page div.second-container .skills{
-        height: 90vh;
+        // height: 800px;
     }
     .skills-main-container .container.skill-page h1{
         display: none;

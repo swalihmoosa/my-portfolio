@@ -119,7 +119,13 @@
                                 background: 0 0;
                                 text-transform: uppercase;
                                 float: right;
-                                text-align: center;
+                                text-align: center;                                
+                                opacity: 0;
+                                overflow: hidden;
+                                clear: both;
+                                animation: fadeInUp 1s 1s;
+                                animation-fill-mode: forwards;
+                                
                             }
                         }
                         li.half {
@@ -246,6 +252,9 @@
         font-size: 40px;
         margin-bottom: 30px;
     }
+    .contact-main-container .container.contact-page div.second-container div.contact-link .small-links a.single-card .font-icon{
+        font-size: 18px;
+    }
 }
 @media (max-width: 480px){
     .contact-main-container{
@@ -266,9 +275,6 @@
         padding: 50px 30px 10% 70px;
     }
     .contact-main-container .container.contact-page div.second-container div.contact-link a.single-card .font-icon{
-        font-size: 18px;
-    }
-    .contact-main-container .container.contact-page div.second-container div.contact-link .small-links a.single-card .font-icon{
         font-size: 18px;
     }
 }
