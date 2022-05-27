@@ -4,9 +4,10 @@
     align-items: center;
     width: 100%;
     height: 100vh;
+    padding: 5% 10% 5%;
+    position: relative;
     .container.contact-page{
         width: 100%;
-        padding: 5% 10% 0;
         h1 {
             color: #ffd700;
             font-size: 56px;
@@ -15,6 +16,7 @@
             font-weight: 400;
             width: 100%;
             position: relative;
+            margin-bottom: 40px;
             &:before {
                 content: '<h1>';
                 font-family: 'La Belle Aurore', cursive;
@@ -142,56 +144,14 @@
                 animation: fadeInUp 1s 1s;
                 animation-fill-mode: forwards;
     
-                div.small-links{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    a.single-card.address{
-                        width: 250px;
-                        height: 250px;
-                        margin: 0 auto 25px;
-                        font-size: 38px;
-                    }
-                }
-                div.large-links{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    padding: 0 5%;
-                    a.single-card.navigations{
-                        width: 50px;
-                        height: 50px;
-                        padding: 0;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 25px;
-                    }
-                }
-    
                 a.single-card{
-                    width: 150px;
-                    height: 150px;
-                    margin-bottom: 25px;
-                    padding: 4% 3% 3% 3%;
-                    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-                    position: relative;
-                    background-color: #092c43;
-                    border: 2px solid transparent;
-                    transition: all .8s ease 0s;
-                    border-radius: 50%;
-                    text-align: center;
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
-                    flex-wrap: wrap;
-                    font-size: 20px;
-    
-                    &:hover{
-                        animation: pulse 1s infinite;
-                        opacity: 1;
+                    margin-bottom: 30px;
+
+                    .font-icon{
+                        font-size: 22px;
                     }
     
                     h6{
@@ -199,8 +159,9 @@
                         font-weight: 700;
                         font-size: 15px;
                         font-family: "Poppins";
-                        display: inline-block;
                         margin-bottom: 10px;
+                        width: 90%;
+                        text-align: center;
                     }
                     p{
                         color: #fff;
@@ -212,7 +173,45 @@
                         margin-bottom: 15px;
                     }
                 }
+                hr.line{
+                    width: 100%;
+                    height: 2px;
+                    background: #ffd700;
+                }
+                .small-links{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    padding: 30px;
+                    a.single-card{
+                        .font-icon{
+                            font-size: 27px;
+                        }
+                    }
+                }
             }
         }
     }
+}
+
+@media (max-width: 1280px){
+    .contact-main-container{
+        padding: 5% 5% 5% 10%;
+    }
+    .contact-main-container .container.contact-page div.second-container div.contact-link{
+        width: 55%;
+    }
+}
+@media (max-width: 1080px){
+}
+@media (max-width: 980px){
+}
+@media (max-width: 768px){
+}
+@media (max-width: 640px){
+}
+@media (max-width: 480px){
+}
+@media (max-width: 360px){
 }
