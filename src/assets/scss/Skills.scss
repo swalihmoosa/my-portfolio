@@ -84,7 +84,7 @@
             //         background-color: #092c43;
             //         border: 1px solid transparent;
             //         transition: all .8s ease 0s;
-            //         border-radius: 38% 62% 63% 37% / 41% 44% 46% 59%;
+                    // border-radius: 38% 62% 63% 37% / 41% 44% 46% 59%;
             //         display: flex;
             //         justify-content: center;
             //         align-items: center;
@@ -152,18 +152,6 @@
                         background-color: #022c43;
                         border: 3px solid #ffd700;
                     }
-                    &::after{
-                        content: "";
-                        position: absolute;
-                        bottom: 0%;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 12px;
-                        height: 12px;
-                        border-radius: 50%;
-                        background-color: #022c43;
-                        border: 3px solid #ffd700;
-                    }
                 }
                 .single-card{
                     width: 46%;
@@ -174,6 +162,7 @@
                     padding: 2%;
                     height: 100px;
                     position: absolute;
+                    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
                     &::after{
                         content: "";
                         position: absolute;
@@ -222,12 +211,14 @@
                     &.first-child{
                         top: 14.28%;
                         left: 0;
+                        border-left: 0;
+                        border-top: 0;
                         &::before{
                             border-top: 8px solid transparent;
                             border-bottom: 8px solid transparent;
                             border-right: 8px solid transparent;
                             border-left: 8px solid #fff;
-                            right: -18px;
+                            right: -17px;
                         }
                         &::after{
                             right: -42px;
@@ -242,8 +233,10 @@
                     &.second-child{
                         top: 28.57%;
                         right: 0;
+                        border-right: 0;
+                        border-top: 0;
                         &::before{
-                            left: -18px;
+                            left: -17px;
                             border-top: 8px solid transparent;
                             border-bottom: 8px solid transparent;
                             border-left: 8px solid transparent;
@@ -262,12 +255,14 @@
                     &.third-child{
                         top: 42.85%;
                         left: 0;
+                        border-left: 0;
+                        border-top: 0;
                         &::before{
                             border-top: 8px solid transparent;
                             border-bottom: 8px solid transparent;
                             border-right: 8px solid transparent;
                             border-left: 8px solid #fff;
-                            right: -18px;
+                            right: -17px;
                         }
                         &::after{
                             right: -42px;
@@ -282,8 +277,10 @@
                     &.fourth-child{
                         top: 57.14%;
                         right: 0;
+                        border-right: 0;
+                        border-top: 0;
                         &::before{
-                            left: -18px;
+                            left: -17px;
                             border-top: 8px solid transparent;
                             border-bottom: 8px solid transparent;
                             border-left: 8px solid transparent;
@@ -302,12 +299,14 @@
                     &.fifth-child{
                         top: 71.42%;
                         left: 0;
+                        border-left: 0;
+                        border-top: 0;
                         &::before{
                             border-top: 8px solid transparent;
                             border-bottom: 8px solid transparent;
                             border-right: 8px solid transparent;
                             border-left: 8px solid #fff;
-                            right: -18px;
+                            right: -17px;
                         }
                         &::after{
                             right: -42px;
@@ -322,8 +321,10 @@
                     &.sixth-child{
                         top: 85.74%;
                         right: 0;
+                        border-right: 0;
+                        border-top: 0;
                         &::before{
-                            left: -18px;
+                            left: -17px;
                             border-top: 8px solid transparent;
                             border-bottom: 8px solid transparent;
                             border-left: 8px solid transparent;
