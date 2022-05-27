@@ -35,8 +35,8 @@
                 color: #ffd700;
                 font-size: 18px;
                 position: absolute;
-                margin-top: 18px;
-                margin-left: 20px;
+                margin-top: 27px;
+                margin-left: 0px;
                 animation: fadeIn 1s 1.7s backwards;
                 opacity: 0.6;
             }
@@ -51,12 +51,11 @@
                 width: 40%;
                 max-height: 90%;
                 p{
-                    font-size: 13px;
                     color: #fff;
                     font-family: "Poppins";
                     font-weight: 300;
                     max-width: fit-content;
-                    font-size: 14px !important;
+                    font-size: 16px !important;
                     line-height: 20px;
                     margin-bottom: 15px;
                     opacity: 0;
@@ -156,10 +155,9 @@
     
                     h6{
                         color: #fff;
-                        font-weight: 700;
-                        font-size: 15px;
+                        font-weight: 500;
+                        font-size: 14px;
                         font-family: "Poppins";
-                        margin-bottom: 10px;
                         width: 90%;
                         text-align: center;
                     }
@@ -183,8 +181,9 @@
                     justify-content: space-between;
                     align-items: center;
                     flex-wrap: wrap;
-                    padding: 30px;
+                    padding: 30px 30px 0 30px;
                     a.single-card{
+                        margin-bottom: 0;
                         .font-icon{
                             font-size: 27px;
                         }
@@ -234,8 +233,42 @@
     .contact-main-container{
         padding: 100px 30px 20% 90px;
     }
+    .contact-main-container .container.contact-page div.second-container .text-zone{
+        width: 100%;
+    }
+    .contact-main-container .container.contact-page div.second-container div.contact-link{
+        width: 100%;
+    }
+    .contact-main-container .container.contact-page div.second-container div.contact-link a.single-card h6{
+        text-align: right;
+    }
+    .contact-main-container .container.contact-page h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
 }
 @media (max-width: 480px){
+    .contact-main-container{
+        padding: 100px 30px 30% 70px;
+    }
+    .contact-main-container .container.contact-page div.second-container div.contact-link .small-links a.single-card .font-icon{
+        font-size: 22px;
+    }
+    .contact-main-container .container.contact-page div.second-container div.contact-link .small-links{
+        padding: 30px 10px 0 10px;
+    }
+    .contact-main-container .container.contact-page div.second-container div.contact-link a.single-card h6{
+        font-size: 13px;
+    }
 }
 @media (max-width: 360px){
+    .contact-main-container {
+        padding: 50px 30px 10% 70px;
+    }
+    .contact-main-container .container.contact-page div.second-container div.contact-link a.single-card .font-icon{
+        font-size: 18px;
+    }
+    .contact-main-container .container.contact-page div.second-container div.contact-link .small-links a.single-card .font-icon{
+        font-size: 18px;
+    }
 }
