@@ -103,6 +103,9 @@
     .image{
         width: 48%;
         animation: fadeIn 1s 1s backwards;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .spin-container {
             width: 500px;
             height: 500px;
@@ -125,10 +128,10 @@
                     position: absolute;
                     left: -21%;
                     top: -21%;
-                    background: url(https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=2868fd5c3f30697d38732224e0ef51ed);
-                    background-size: 100%;
-                    background-color: red;
-                    background-position: center center;
+                    // background: url('../images/me.jpg') no-repeat;
+                    background-color: #ffd700;
+                    background-size: 60%;
+                    background-position: center 0px;
                     display: flex;
                     color: #003;
                     font-size: 5vw;
@@ -140,6 +143,11 @@
                     animation: spin 12s linear infinite reverse;
                     opacity: 1;
                     z-index: 2;
+                    img{
+                        width: 72%;
+                        display: block;
+                        margin-top: 69px;
+                    }
                 }
             }
         }     

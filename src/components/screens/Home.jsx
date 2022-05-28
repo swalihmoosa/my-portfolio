@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import LogoTitle from '../../assets/images/logo-s.png'
 import '../../assets/scss/Home.scss'
 import AnimatedLetters from '../animations/AnimatedLetters'
+import me from '../../assets/images/me.jpg'
+
 
 
 export default function Home() {
@@ -64,7 +66,9 @@ export default function Home() {
                 <div className="image">
                     <div class="spin-container">
                         <div class="shape">
-                            <div class="bd"></div>
+                            <div class="bd">
+                                <img src={me} />
+                            </div>
                         </div>
                     </div>
                 </div>
