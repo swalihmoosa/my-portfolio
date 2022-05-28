@@ -37,13 +37,12 @@ export default function About() {
                             <form >
                                 <ul>
                                     <li className="half">
-                                        <input placeholder="Name" type="text" name="name" required />
+                                        <input placeholder="Name" type="text" required />
                                     </li>
                                     <li className="half">
                                         <input
                                             placeholder="Email"
                                             type="email"
-                                            name="email"
                                             required
                                         />
                                     </li>
@@ -51,14 +50,19 @@ export default function About() {
                                         <input
                                             placeholder="Subject"
                                             type="text"
-                                            name="subject"
+                                            required
+                                        />
+                                    </li>
+                                    <li>
+                                        <input
+                                            placeholder="Mobile"
+                                            type="number"
                                             required
                                         />
                                     </li>
                                     <li>
                                         <textarea
                                             placeholder="Message"
-                                            name="message"
                                             required
                                         ></textarea>
                                     </li>

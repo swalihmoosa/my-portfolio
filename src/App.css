@@ -99,7 +99,15 @@ p{
     animation: fadeIn 1s 1s backwards;
     opacity: 0.6;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+input[type=number] {
+    -moz-appearance: textfield;
+}
 .loader-hidden {
     display: none;
 }
