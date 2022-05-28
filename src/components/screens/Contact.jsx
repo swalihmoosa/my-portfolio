@@ -9,6 +9,11 @@ import './../../assets/scss/Contact.scss'
 
 export default function About() {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const [name,setName] = useState("")
+    const [mail,setMail] = useState("")
+    const [subject,setSubject] = useState("")
+    const [mobile,setMobile] = useState("")
+    const [message,setMessage] = useState("")
 
     useEffect(() => {
         setTimeout(() => {
@@ -37,13 +42,14 @@ export default function About() {
                             <form >
                                 <ul>
                                     <li className="half">
-                                        <input placeholder="Name" type="text" required />
+                                        <input placeholder="Name" type="text" required onChange={(e)=>setName(e.target.value)} />
                                     </li>
                                     <li className="half">
                                         <input
                                             placeholder="Email"
                                             type="email"
                                             required
+                                            onChange={(e)=>setMail(e.target.value)}
                                         />
                                     </li>
                                     <li>
@@ -51,6 +57,7 @@ export default function About() {
                                             placeholder="Subject"
                                             type="text"
                                             required
+                                            onChange={(e)=>setSubject(e.target.value)}
                                         />
                                     </li>
                                     <li>
@@ -58,12 +65,14 @@ export default function About() {
                                             placeholder="Mobile"
                                             type="number"
                                             required
+                                            onChange={(e)=>setMobile(e.target.value)}
                                         />
                                     </li>
                                     <li>
                                         <textarea
                                             placeholder="Message"
                                             required
+                                            onChange={(e)=>setMessage(e.target.value)}
                                         ></textarea>
                                     </li>
                                     <li>
