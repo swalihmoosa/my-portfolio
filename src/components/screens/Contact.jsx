@@ -10,6 +10,7 @@ import 'sweetalert2/src/sweetalert2.scss'
 import './../../assets/scss/Contact.scss'
 import Lottie from 'react-lottie';
 import animationData from '../../assets/lotties/arrow-lottie.json';
+import validator from 'validator'
 
 
 export default function About() {
@@ -19,7 +20,19 @@ export default function About() {
     const [subject,setSubject] = useState("")
     const [mobile,setMobile] = useState("")
     const [message,setMessage] = useState("")
-    const [isLoading,setLoading] = useState(true)
+    const [isLoading,setLoading] = useState(false)
+    const [errorMessage,setErrorMesaage] = useState("")
+    const [emailError, setEmailError] = useState('')
+
+    // const validateEmail = (e) => {
+    //   var email = e.target.value
+    
+    //   if (validator.isEmail(email)) {
+    //     console.log(validator.isEmail(email))
+    //   } else {
+    //     console.log('Enter valid Email!')
+    //   }
+    // }
 
     useEffect(() => {
         setTimeout(() => {
@@ -45,8 +58,9 @@ export default function About() {
             Subject: subject,
             Message:message,
         }
-        if( name !== "" && mail !== "" && mobile !== "" && subject !== "" && message !== ""){
+        if( name !== "" && validator.isEmail(mail) === true && mobile.length === 10 && subject !== "" && message !== ""){
             setLoading(true)
+            setErrorMesaage("")
             setStyle({
                 ...style,
                 name:{border:"2px solid transparent"},
@@ -81,6 +95,7 @@ export default function About() {
                 });
         }
         if( message === "" ){
+            setErrorMesaage("* all fields required")
             setStyle({
                 ...style,
                 message:{border:"2px solid red"},
@@ -91,6 +106,7 @@ export default function About() {
             })
         }
         if( subject === "" ){
+            setErrorMesaage("* all fields required")
             setStyle({
                 ...style,
                 subject:{border:"2px solid red"},
@@ -100,7 +116,8 @@ export default function About() {
                 message:{border:"2px solid transparent"},
             })
         }
-        if( mobile === "" ){
+        if( mobile.length < 10 || mobile.length > 10 ){
+            setErrorMesaage("* Enter valid mobile..!")
             setStyle({
                 ...style,
                 mobile:{border:"2px solid red"},
@@ -110,7 +127,8 @@ export default function About() {
                 subject:{border:"2px solid transparent"},
             })
         }
-        if( mail === "" ){
+        if(!validator.isEmail(mail)){
+            setErrorMesaage("* Enter valid email..!")
             setStyle({
                 ...style,
                 mail:{border:"2px solid red"},
@@ -121,6 +139,7 @@ export default function About() {
             })
         }
         if( name === "" ){
+            setErrorMesaage("* all fields required")
             setStyle({
                 ...style,
                 name:{border:"2px solid red"},
@@ -177,12 +196,13 @@ export default function About() {
                             <form onSubmit={handleSubmit}>
                                 <ul>
                                     <li className="half" style={style.name} >
-                                        <input placeholder="Name" type="text" required onChange={(e)=>setName(e.target.value)} />
+                                        <input placeholder="Name" value={name} type="text" required onChange={(e)=>setName(e.target.value)} />
                                     </li>
                                     <li className="half" style={style.mail} >
                                         <input
                                             placeholder="Email"
                                             type="email"
+                                            value={mail}
                                             required
                                             onChange={(e)=>setMail(e.target.value)}
                                         />
@@ -191,6 +211,7 @@ export default function About() {
                                         <input
                                             placeholder="Mobile"
                                             type="number"
+                                            value={mobile}
                                             required
                                             onChange={(e)=>setMobile(e.target.value)}
                                         />
@@ -199,6 +220,7 @@ export default function About() {
                                         <input
                                             placeholder="Subject"
                                             type="text"
+                                            value={subject}
                                             required
                                             onChange={(e)=>setSubject(e.target.value)}
                                         />
@@ -206,10 +228,18 @@ export default function About() {
                                     <li style={style.message} >
                                         <textarea
                                             placeholder="Message"
+                                            value={message}
                                             required
                                             onChange={(e)=>setMessage(e.target.value)}
                                         ></textarea>
                                     </li>
+                                    {
+                                        errorMessage !== "" ?
+                                            <p className="error-mesaage">
+                                                {errorMessage}
+                                            </p>
+                                        : ""
+                                    }
                                     <li className='submit' >
                                         {
                                             isLoading ? 

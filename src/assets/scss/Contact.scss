@@ -3,9 +3,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    padding: 5% 10% 5%;
+    min-height: 100vh;
+    padding: 100px 10% 5%;
     position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
     .container.contact-page{
         width: 100%;
         h1 {
@@ -142,6 +144,18 @@
                         li.submit{
                             overflow: visible;
                         }
+                        p.error-mesaage{
+                            color: red;
+                            text-align: right;
+                            display: block;
+                            width: 100%;
+                            max-width: 100%;
+                            padding-right: 10px;
+                            font-size: 12px !important;
+                            animation: shakeX 1.5s;
+                            animation-iteration-count: 1;
+                            opacity: 1;
+                        }
                     }
                 }               
             }
@@ -206,7 +220,7 @@
 
 @media (max-width: 1280px){
     .contact-main-container{
-        padding: 5% 5% 5% 10%;
+        padding: 100px 5% 5% 10%;
     }
     .contact-main-container .container.contact-page div.second-container div.contact-link{
         width: 45%;

@@ -3,9 +3,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    padding: 5% 10% 5%;
+    min-height: 100vh;
+    padding: 100px 10% 5%;
     position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
     .container.skill-page{
         width: 100%;
         h1 {
@@ -314,7 +316,7 @@
 
 @media (max-width: 1280px){
     .skills-main-container{
-        padding: 5% 5% 5% 10%;
+        padding: 100px 5% 5% 10%;
     }
     .skills-main-container .container.skill-page div.second-container .skills{
         width: 55%;

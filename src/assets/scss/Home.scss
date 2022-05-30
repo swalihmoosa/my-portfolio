@@ -1,12 +1,14 @@
 .home-page {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     position: relative;
-    padding: 5% 10% 5%;
+    padding: 100px 10% 5%;
     overflow: hidden;
+    max-width: 1280px;
+    margin: 0 auto;
 
     .text-zone {
         h1 {
