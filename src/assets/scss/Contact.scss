@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    padding: 100px 10% 5%;
+    padding: 100px 0% 5%;
     position: relative;
     max-width: 1280px;
     margin: 0 auto;
@@ -162,16 +162,16 @@
             div.contact-link{
                 width: 40%;
                 position: relative;
-                opacity: 0;
-                clear: both;
-                animation: fadeInUp 1s 1s;
-                animation-fill-mode: forwards;
     
                 a.single-card{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     margin-bottom: 30px;
+                    opacity: 0;
+                    clear: both;
+                    animation: fadeInUp 1s 1s;
+                    animation-fill-mode: forwards;
 
                     .font-icon{
                         font-size: 22px;
@@ -199,6 +199,10 @@
                     width: 100%;
                     height: 2px;
                     background: #ffd700;
+                    opacity: 0;
+                    clear: both;
+                    animation: fadeInUp 1s 1s;
+                    animation-fill-mode: forwards;
                 }
                 .small-links{
                     display: flex;
@@ -208,6 +212,10 @@
                     padding: 30px 30px 0 30px;
                     a.single-card{
                         margin-bottom: 0;
+                        opacity: 0;
+                        clear: both;
+                        animation: fadeInUp 1s 1s;
+                        animation-fill-mode: forwards;
                         .font-icon{
                             font-size: 27px;
                         }
