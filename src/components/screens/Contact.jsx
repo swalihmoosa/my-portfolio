@@ -1,11 +1,15 @@
 import { faGithub, faInstagram, faLinkedin, faStackOverflow, faTwitter, faWhatsapp, faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faLocationDot, faPhone, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faL, faLocationDot, faPhone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../animations/AnimatedLetters'
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
 import './../../assets/scss/Contact.scss'
+import Lottie from 'react-lottie';
+import animationData from '../../assets/lotties/arrow-lottie.json';
 
 
 export default function About() {
@@ -15,18 +19,22 @@ export default function About() {
     const [subject,setSubject] = useState("")
     const [mobile,setMobile] = useState("")
     const [message,setMessage] = useState("")
-    const [errorMessage,setErrorMessage] = useState("")
-    const [nameError,setNameError] = useState(false)
-    const [mailError,setMailError] = useState(false)
-    const [subjectError,setSubjectError] = useState(false)
-    const [mobileError,setMobileError] = useState(false)
-    const [messageError,setMessageError] = useState(false)
+    const [isLoading,setLoading] = useState(true)
 
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 3000)
     }, [])
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    }
 
     const handleSubmit = (e) =>{
         e.preventDefault()
@@ -38,28 +46,89 @@ export default function About() {
             Message:message,
         }
         if( name !== "" && mail !== "" && mobile !== "" && subject !== "" && message !== ""){
+            setLoading(true)
+            setStyle({
+                ...style,
+                name:{border:"2px solid transparent"},
+                message:{border:"2px solid transparent"},
+                mail:{border:"2px solid transparent"},
+                mobile:{border:"2px solid transparent"},
+                subject:{border:"2px solid transparent"},
+            })
             axios
                 .post('https://sheet.best/api/sheets/d2be6958-4241-4b29-b41d-23e2cb1c5ea5',data)
                 .then((response) => {
-                    console.log(response);
+                    Swal.fire({
+                        title: 'Success..!',
+                        text: 'Successfully contacted me...I will contact you as soon as possible',
+                        icon: 'success',
+                        confirmButtonText: 'Done'
+                    })
+                    setName("")
+                    setMail("")
+                    setMobile("")
+                    setSubject("")
+                    setMessage("")
+                    setLoading(false)
                 }).catch(error => {
                     console.log(error);
+                    Swal.fire({
+                        title: 'Error..!',
+                        text: 'An error occured...try after sometime',
+                        icon: 'error',
+                        confirmButtonText: 'Okay'
+                    })
                 });
         }
-        if( name === "" ){
-            setStyle({...style,name:{border:"2px solid red"}})
-        }
-        if( mail === "" ){
-            setStyle({...style,mail:{border:"2px solid red"}})
-        }
-        if( mobile === "" ){
-            setStyle({...style,mobile:{border:"2px solid red"}})
+        if( message === "" ){
+            setStyle({
+                ...style,
+                message:{border:"2px solid red"},
+                name:{border:"2px solid transparent"},
+                mail:{border:"2px solid transparent"},
+                mobile:{border:"2px solid transparent"},
+                subject:{border:"2px solid transparent"},
+            })
         }
         if( subject === "" ){
-            setStyle({...style,subject:{border:"2px solid red"}})
+            setStyle({
+                ...style,
+                subject:{border:"2px solid red"},
+                name:{border:"2px solid transparent"},
+                mail:{border:"2px solid transparent"},
+                mobile:{border:"2px solid transparent"},
+                message:{border:"2px solid transparent"},
+            })
         }
-        if( message === "" ){
-            setStyle({...style,message:{border:"2px solid red"}})
+        if( mobile === "" ){
+            setStyle({
+                ...style,
+                mobile:{border:"2px solid red"},
+                name:{border:"2px solid transparent"},
+                mail:{border:"2px solid transparent"},
+                message:{border:"2px solid transparent"},
+                subject:{border:"2px solid transparent"},
+            })
+        }
+        if( mail === "" ){
+            setStyle({
+                ...style,
+                mail:{border:"2px solid red"},
+                name:{border:"2px solid transparent"},
+                message:{border:"2px solid transparent"},
+                mobile:{border:"2px solid transparent"},
+                subject:{border:"2px solid transparent"},
+            })
+        }
+        if( name === "" ){
+            setStyle({
+                ...style,
+                name:{border:"2px solid red"},
+                message:{border:"2px solid transparent"},
+                mail:{border:"2px solid transparent"},
+                mobile:{border:"2px solid transparent"},
+                subject:{border:"2px solid transparent"},
+            })
         }
     }
 
@@ -81,7 +150,11 @@ export default function About() {
             border : '2px solid transparent'
         }
     })
-    console.log("styleeeeee",style);
+
+    const lottieStyle ={
+        marginLeft: 'auto',
+        marginRight:0,
+    }
 
     return (
         <div className='contact-main-container'>
@@ -114,20 +187,20 @@ export default function About() {
                                             onChange={(e)=>setMail(e.target.value)}
                                         />
                                     </li>
-                                    <li style={style.subject}>
-                                        <input
-                                            placeholder="Subject"
-                                            type="text"
-                                            required
-                                            onChange={(e)=>setSubject(e.target.value)}
-                                        />
-                                    </li>
                                     <li style={style.mobile} >
                                         <input
                                             placeholder="Mobile"
                                             type="number"
                                             required
                                             onChange={(e)=>setMobile(e.target.value)}
+                                        />
+                                    </li>
+                                    <li style={style.subject}>
+                                        <input
+                                            placeholder="Subject"
+                                            type="text"
+                                            required
+                                            onChange={(e)=>setSubject(e.target.value)}
                                         />
                                     </li>
                                     <li style={style.message} >
@@ -137,8 +210,18 @@ export default function About() {
                                             onChange={(e)=>setMessage(e.target.value)}
                                         ></textarea>
                                     </li>
-                                    <li>
-                                        <input type="submit" className="flat-button" value="SEND" onClick={handleSubmit} />
+                                    <li className='submit' >
+                                        {
+                                            isLoading ? 
+                                                <Lottie 
+                                                    options={defaultOptions}
+                                                    height={50}
+                                                    width={100}
+                                                    style={lottieStyle}
+                                                />
+                                            :
+                                                <input type="submit" className="flat-button" value="SEND" onClick={handleSubmit} />
+                                        }
                                     </li>
                                 </ul>
                             </form>
