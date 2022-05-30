@@ -67,7 +67,7 @@ export default function Home() {
                     <div class="spin-container">
                         <div class="shape">
                             <div class="bd">
-                                <img src={me} />
+                                <img src={me} alt="Profile" />
                             </div>
                         </div>
                     </div>
