@@ -1,6 +1,7 @@
 import { faGithub, faInstagram, faLinkedin, faStackOverflow, faTwitter, faWhatsapp, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faLocationDot, faPhone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../animations/AnimatedLetters'
@@ -14,12 +15,73 @@ export default function About() {
     const [subject,setSubject] = useState("")
     const [mobile,setMobile] = useState("")
     const [message,setMessage] = useState("")
+    const [errorMessage,setErrorMessage] = useState("")
+    const [nameError,setNameError] = useState(false)
+    const [mailError,setMailError] = useState(false)
+    const [subjectError,setSubjectError] = useState(false)
+    const [mobileError,setMobileError] = useState(false)
+    const [messageError,setMessageError] = useState(false)
 
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 3000)
     }, [])
+
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+        const data = {
+            Name: name,
+            Mail:mail,
+            Mobile: mobile,
+            Subject: subject,
+            Message:message,
+        }
+        if( name !== "" && mail !== "" && mobile !== "" && subject !== "" && message !== ""){
+            axios
+                .post('https://sheet.best/api/sheets/d2be6958-4241-4b29-b41d-23e2cb1c5ea5',data)
+                .then((response) => {
+                    console.log(response);
+                }).catch(error => {
+                    console.log(error);
+                });
+        }
+        if( name === "" ){
+            setStyle({...style,name:{border:"2px solid red"}})
+        }
+        if( mail === "" ){
+            setStyle({...style,mail:{border:"2px solid red"}})
+        }
+        if( mobile === "" ){
+            setStyle({...style,mobile:{border:"2px solid red"}})
+        }
+        if( subject === "" ){
+            setStyle({...style,subject:{border:"2px solid red"}})
+        }
+        if( message === "" ){
+            setStyle({...style,message:{border:"2px solid red"}})
+        }
+    }
+
+    
+    const [style, setStyle] = useState({
+        name :{
+            border : '2px solid transparent'
+        },
+        mail :{
+            border : '2px solid transparent'
+        },
+        mobile :{
+            border : '2px solid transparent'
+        },
+        subject :{
+            border : '2px solid transparent'
+        },
+        message :{
+            border : '2px solid transparent'
+        }
+    })
+    console.log("styleeeeee",style);
 
     return (
         <div className='contact-main-container'>
@@ -39,12 +101,12 @@ export default function About() {
                             don't hesitate to contact me using below form either.
                         </p>
                         <div className="contact-form">
-                            <form >
+                            <form onSubmit={handleSubmit}>
                                 <ul>
-                                    <li className="half">
+                                    <li className="half" style={style.name} >
                                         <input placeholder="Name" type="text" required onChange={(e)=>setName(e.target.value)} />
                                     </li>
-                                    <li className="half">
+                                    <li className="half" style={style.mail} >
                                         <input
                                             placeholder="Email"
                                             type="email"
@@ -52,7 +114,7 @@ export default function About() {
                                             onChange={(e)=>setMail(e.target.value)}
                                         />
                                     </li>
-                                    <li>
+                                    <li style={style.subject}>
                                         <input
                                             placeholder="Subject"
                                             type="text"
@@ -60,7 +122,7 @@ export default function About() {
                                             onChange={(e)=>setSubject(e.target.value)}
                                         />
                                     </li>
-                                    <li>
+                                    <li style={style.mobile} >
                                         <input
                                             placeholder="Mobile"
                                             type="number"
@@ -68,7 +130,7 @@ export default function About() {
                                             onChange={(e)=>setMobile(e.target.value)}
                                         />
                                     </li>
-                                    <li>
+                                    <li style={style.message} >
                                         <textarea
                                             placeholder="Message"
                                             required
@@ -76,7 +138,7 @@ export default function About() {
                                         ></textarea>
                                     </li>
                                     <li>
-                                        <input type="submit" className="flat-button" value="SEND" />
+                                        <input type="submit" className="flat-button" value="SEND" onClick={handleSubmit} />
                                     </li>
                                 </ul>
                             </form>
