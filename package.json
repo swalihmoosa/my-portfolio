@@ -2,6 +2,7 @@
   "name": "react-portfolio-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://swalihmoosa.github.io/my_portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -13,6 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
     "gsap-trial": "^3.9.0",
     "leaflet": "^1.7.1",
     "loaders.css": "^0.1.2",
@@ -29,6 +31,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
