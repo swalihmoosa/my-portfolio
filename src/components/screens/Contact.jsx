@@ -51,6 +51,7 @@ export default function About() {
 
     const handleSubmit = (e) =>{
         e.preventDefault()
+        setErrorMesaage("")
         const data = {
             Name: name,
             Mail:mail,

@@ -183,7 +183,7 @@
                         font-size: 14px;
                         font-family: "Poppins";
                         width: 90%;
-                        text-align: center;
+                        text-align: right;
                     }
                     p{
                         color: #fff;
@@ -233,10 +233,16 @@
     .contact-main-container .container.contact-page div.second-container div.contact-link{
         width: 45%;
     }
+    .contact-main-container .container.contact-page div.second-container div.contact-link .small-links a.single-card .font-icon{
+        font-size: 22px;
+    }
 }
 @media (max-width: 1080px){
     .contact-main-container .container.contact-page div.second-container div.contact-link{
         width: 50%;
+    }
+    .contact-main-container .container.contact-page div.second-container div.contact-link .small-links a.single-card .font-icon{
+        font-size: 20px;
     }
 }
 @media (max-width: 980px){
@@ -285,9 +291,6 @@
 @media (max-width: 480px){
     .contact-main-container{
         padding: 100px 30px 30% 70px;
-    }
-    .contact-main-container .container.contact-page div.second-container div.contact-link .small-links a.single-card .font-icon{
-        font-size: 22px;
     }
     .contact-main-container .container.contact-page div.second-container div.contact-link .small-links{
         padding: 30px 10px 0 10px;
