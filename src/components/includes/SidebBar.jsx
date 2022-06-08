@@ -56,7 +56,7 @@ export default function SidebBar() {
                     </a>
                 </li>
                 <li>
-                    <a href="https://wa.me/8129133008" rel="noreferrer" target="_blank">
+                    <a href="https://wa.me/+918129133008" rel="noreferrer" target="_blank">
                     <FontAwesomeIcon icon={faWhatsapp}  />
                     </a>
                 </li>

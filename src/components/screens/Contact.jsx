@@ -282,7 +282,7 @@ export default function About() {
                             <a href='https://stackoverflow.com/users/19142237/swalih-moosa' target="_blank" class="single-card">
                                 <FontAwesomeIcon className='font-icon' icon={faStackOverflow} color="#ffd700" />
                             </a>
-                            <a href='https://wa.me/8129133008' target="_blank" class="single-card">
+                            <a href='https://wa.me/+918129133008' target="_blank" class="single-card">
                                 <FontAwesomeIcon className='font-icon' icon={faWhatsapp} color="#ffd700" />
                             </a>
                             <a href='https://twitter.com/moosa_swalih' target="_blank" class="single-card">
