@@ -13,6 +13,7 @@ export default function SidebBar() {
 
     return (
         <div className="nav-bar" style={{height:size.height}} >
+            <div className="overlay"></div>
             <Link className="logo" to="/">
                 <img src={LogoS} alt="Logo" />
                 SWALIH
