@@ -4,11 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faStackOverflow, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
+import useWindowSize from '../includes/UseWindowSize'
+
 
 
 export default function SidebBar() {
+    const size = useWindowSize()
+
     return (
-        <div className="nav-bar">
+        <div className="nav-bar" style={{height:size.height}} >
             <Link className="logo" to="/">
                 <img src={LogoS} alt="Logo" />
                 SWALIH
