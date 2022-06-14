@@ -23,7 +23,7 @@ export default function Skills() {
                 setCount(count + 1)
             }, 25)
         : setCount(100)
-    })
+    },[count])
 
 
     return (

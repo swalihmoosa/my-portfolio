@@ -1,5 +1,5 @@
 import { faGithub, faInstagram, faLinkedin, faStackOverflow, faTwitter, faWhatsapp, faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faL, faLocationDot, faPhone, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
@@ -22,7 +22,6 @@ export default function About() {
     const [message,setMessage] = useState("")
     const [isLoading,setLoading] = useState(false)
     const [errorMessage,setErrorMesaage] = useState("")
-    const [emailError, setEmailError] = useState('')
 
     // const validateEmail = (e) => {
     //   var email = e.target.value
@@ -259,39 +258,39 @@ export default function About() {
                         </div>
                     </div> 
                     <div className='contact-link'>
-                        <a href='geo:124.028582,-29.201930' target="_blank" class="single-card">
+                        <a href='geo:124.028582,-29.201930' target="_blank" rel="noreferrer" class="single-card">
                             <FontAwesomeIcon className='font-icon' icon={faLocationDot} color="#ffd700" />
                             <h6>Chembayil house Kumbalakode (PO) Punjappadam, Pazhayannur, Thrissur 680587</h6>
                         </a>
-                        <a href='tel:8129133008' target="_blank" class="single-card">
+                        <a href='tel:8129133008' target="_blank" rel="noreferrer" class="single-card">
                             <FontAwesomeIcon className='font-icon' icon={faPhone} color="#ffd700" />
                             <h6>+91 8129133008</h6>
                         </a>
-                        <a href='mailto:swalihmoosa72@gmail.com' target="_blank" class="single-card">
+                        <a href='mailto:swalihmoosa72@gmail.com' target="_blank" rel="noreferrer" class="single-card">
                             <FontAwesomeIcon className='font-icon' icon={faEnvelope} color="#ffd700" />
                             <h6>swalihmoosa72@gmail.com</h6>
                         </a>
                         <hr className="line" />
                         <div className="small-links">
-                            <a href='https://github.com/swalihmoosa' target="_blank" class="single-card">
+                            <a href='https://github.com/swalihmoosa' target="_blank" rel="noreferrer" class="single-card">
                                 <FontAwesomeIcon className='font-icon' icon={faGithub} color="#ffd700" />
                             </a>
-                            <a href='https://www.linkedin.com/in/swalih-moosa/' target="_blank" class="single-card">
+                            <a href='https://www.linkedin.com/in/swalih-moosa/' target="_blank" rel="noreferrer" class="single-card">
                                 <FontAwesomeIcon className='font-icon' icon={faLinkedin} color="#ffd700" />
                             </a>
-                            <a href='https://stackoverflow.com/users/19142237/swalih-moosa' target="_blank" class="single-card">
+                            <a href='https://stackoverflow.com/users/19142237/swalih-moosa' target="_blank" rel="noreferrer" class="single-card">
                                 <FontAwesomeIcon className='font-icon' icon={faStackOverflow} color="#ffd700" />
                             </a>
-                            <a href='https://wa.me/+918129133008' target="_blank" class="single-card">
+                            <a href='https://wa.me/+918129133008' target="_blank" rel="noreferrer" class="single-card">
                                 <FontAwesomeIcon className='font-icon' icon={faWhatsapp} color="#ffd700" />
                             </a>
-                            <a href='https://twitter.com/moosa_swalih' target="_blank" class="single-card">
+                            <a href='https://twitter.com/moosa_swalih' target="_blank" rel="noreferrer" class="single-card">
                                 <FontAwesomeIcon className='font-icon' icon={faTwitter} color="#ffd700" />
                             </a>
-                            <a href='https://www.instagram.com/junior_moosa/' target="_blank" class="single-card">
+                            <a href='https://www.instagram.com/junior_moosa/' target="_blank" rel="noreferrer" class="single-card">
                                 <FontAwesomeIcon className='font-icon' icon={faInstagram} color="#ffd700" />
                             </a>
-                            <a href='https://www.facebook.com/swalih.moosa.7/' target="_blank" class="single-card">
+                            <a href='https://www.facebook.com/swalih.moosa.7/' target="_blank" rel="noreferrer" class="single-card">
                                 <FontAwesomeIcon className='font-icon' icon={faFacebook} color="#ffd700" />
                             </a>
                         </div>
