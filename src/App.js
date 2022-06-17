@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import './assets/css/style.css'
 import 'loaders.css'
@@ -12,7 +12,7 @@ import Skills from './components/screens/Skills';
 
 function App() {
 	return (
-		<HashRouter>
+		<BrowserRouter>
 			<SidebBar />
 			<Routes>
 				<Route index path="/" element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
 				<Route path="/skills" element={<Skills />} />
 				<Route path="/contact" element={<Contact />} />
 			</Routes>
-		</HashRouter>
+		</BrowserRouter>
 	);
 }
 
