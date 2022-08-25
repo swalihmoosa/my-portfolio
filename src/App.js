@@ -11,7 +11,6 @@ import Skills from './components/screens/Skills';
 
 
 function App() {
-	console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 	return (
 		<BrowserRouter>
 			<SidebBar />
